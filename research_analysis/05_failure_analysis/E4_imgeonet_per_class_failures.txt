@@ -1,0 +1,114 @@
+﻿
+======================================================================
+scannet.txt: 18 classes
+  Overall  mAP@0.25=0.5457  mAR@0.25=0.7181  mAP@0.50=0.2894  mAR@0.50=0.4078
+  AP@0.25 == 0 :   0 classes (0.0%)
+  AR@0.25 == 0 :   0 classes (0.0%)  <- never even RECALLED
+  AP@0.50 == 0 :   0 classes (0.0%)
+  AP@0.25 median=0.5596  mean=0.5457
+  mean AP@0.50 / AP@0.25 drop = 47.0%
+  10 worst classes by AP@0.25:
+     picture                      AP25=0.0427 AR25=0.1351 AP50=0.0025
+     window                       AP25=0.2466 AR25=0.5213 AP50=0.0294
+     curtain                      AP25=0.3372 AR25=0.6269 AP50=0.0426
+     garbagebin                   AP25=0.3605 AR25=0.5736 AP50=0.1737
+     door                         AP25=0.4041 AR25=0.6510 AP50=0.0804
+     cabinet                      AP25=0.4059 AR25=0.6640 AP50=0.1578
+     counter                      AP25=0.4117 AR25=0.7308 AP50=0.0786
+     showercurtrain               AP25=0.4746 AR25=0.6786 AP50=0.0199
+     refrigerator                 AP25=0.5442 AR25=0.7368 AP50=0.2404
+     sink                         AP25=0.5750 AR25=0.6735 AP50=0.2450
+  8 best classes by AP@0.25:
+     toilet                       AP25=0.9518 AR25=0.9655 AP50=0.6883
+     bed                          AP25=0.8407 AR25=0.8519 AP50=0.7476
+     bathtub                      AP25=0.8147 AR25=0.8387 AP50=0.6165
+     sofa                         AP25=0.7558 AR25=0.8866 AP50=0.4566
+     chair                        AP25=0.7483 AR25=0.8202 AP50=0.4645
+     desk                         AP25=0.7093 AR25=0.9291 AP50=0.4387
+     bookshelf                    AP25=0.6009 AR25=0.8571 AP50=0.3289
+     table                        AP25=0.5986 AR25=0.7857 AP50=0.3985
+  worst LOCALISATION collapse (AP25>0.30, largest relative AP25->AP50 drop):
+     showercurtrain               AP25=0.4746 -> AP50=0.0199  (95.8% drop)
+     curtain                      AP25=0.3372 -> AP50=0.0426  (87.4% drop)
+     counter                      AP25=0.4117 -> AP50=0.0786  (80.9% drop)
+     door                         AP25=0.4041 -> AP50=0.0804  (80.1% drop)
+     cabinet                      AP25=0.4059 -> AP50=0.1578  (61.1% drop)
+     sink                         AP25=0.5750 -> AP50=0.2450  (57.4% drop)
+     refrigerator                 AP25=0.5442 -> AP50=0.2404  (55.8% drop)
+     garbagebin                   AP25=0.3605 -> AP50=0.1737  (51.8% drop)
+
+======================================================================
+arkit.txt: 17 classes
+  Overall  mAP@0.25=0.5982  mAR@0.25=0.7503  mAP@0.50=0.4276  mAR@0.50=0.5314
+  AP@0.25 == 0 :   0 classes (0.0%)
+  AR@0.25 == 0 :   0 classes (0.0%)  <- never even RECALLED
+  AP@0.50 == 0 :   1 classes (5.9%)
+  AP@0.25 median=0.6539  mean=0.5982
+  mean AP@0.50 / AP@0.25 drop = 28.5%
+  10 worst classes by AP@0.25:
+     tv_monitor                   AP25=0.0355 AR25=0.1922 AP50=0.0000
+     dishwasher                   AP25=0.2024 AR25=0.8800 AP50=0.1470
+     stove                        AP25=0.2360 AR25=0.2857 AP50=0.0228
+     stool                        AP25=0.2654 AR25=0.6667 AP50=0.1428
+     shelf                        AP25=0.4523 AR25=0.6699 AP50=0.1734
+     sink                         AP25=0.5519 AR25=0.6242 AP50=0.1858
+     cabinet                      AP25=0.5662 AR25=0.6741 AP50=0.3159
+     oven                         AP25=0.6247 AR25=0.7338 AP50=0.4182
+     fireplace                    AP25=0.6539 AR25=0.7593 AP50=0.2664
+     table                        AP25=0.7011 AR25=0.8742 AP50=0.4430
+  8 best classes by AP@0.25:
+     bathtub                      AP25=0.9456 AR25=0.9694 AP50=0.9072
+     toilet                       AP25=0.9092 AR25=0.9174 AP50=0.8179
+     bed                          AP25=0.8865 AR25=0.9503 AP50=0.8309
+     refrigerator                 AP25=0.8312 AR25=0.9634 AP50=0.7677
+     sofa                         AP25=0.7923 AR25=0.8661 AP50=0.6551
+     washer                       AP25=0.7840 AR25=0.8772 AP50=0.6873
+     chair                        AP25=0.7318 AR25=0.8512 AP50=0.4873
+     table                        AP25=0.7011 AR25=0.8742 AP50=0.4430
+  worst LOCALISATION collapse (AP25>0.30, largest relative AP25->AP50 drop):
+     sink                         AP25=0.5519 -> AP50=0.1858  (66.3% drop)
+     shelf                        AP25=0.4523 -> AP50=0.1734  (61.7% drop)
+     fireplace                    AP25=0.6539 -> AP50=0.2664  (59.3% drop)
+     cabinet                      AP25=0.5662 -> AP50=0.3159  (44.2% drop)
+     table                        AP25=0.7011 -> AP50=0.4430  (36.8% drop)
+     chair                        AP25=0.7318 -> AP50=0.4873  (33.4% drop)
+     oven                         AP25=0.6247 -> AP50=0.4182  (33.1% drop)
+     sofa                         AP25=0.7923 -> AP50=0.6551  (17.3% drop)
+
+======================================================================
+scannet200.txt: 189 classes
+  Overall  mAP@0.25=0.2238  mAR@0.25=0.3497  mAP@0.50=0.0967  mAR@0.50=0.1603
+  AP@0.25 == 0 :  63 classes (33.3%)
+  AR@0.25 == 0 :  63 classes (33.3%)  <- never even RECALLED
+  AP@0.50 == 0 :  89 classes (47.1%)
+  AP@0.25 median=0.1000  mean=0.2238
+  mean AP@0.50 / AP@0.25 drop = 56.8%
+  10 worst classes by AP@0.25:
+     ceiling                      AP25=0.0000 AR25=0.0000 AP50=0.0000
+     furniture                    AP25=0.0000 AR25=0.0000 AP50=0.0000
+     water bottle                 AP25=0.0000 AR25=0.0000 AP50=0.0000
+     column                       AP25=0.0000 AR25=0.0000 AP50=0.0000
+     power strip                  AP25=0.0000 AR25=0.0000 AP50=0.0000
+     cushion                      AP25=0.0000 AR25=0.0000 AP50=0.0000
+     blinds                       AP25=0.0000 AR25=0.0000 AP50=0.0000
+     headphones                   AP25=0.0000 AR25=0.0000 AP50=0.0000
+     projector                    AP25=0.0000 AR25=0.0000 AP50=0.0000
+     clock                        AP25=0.0000 AR25=0.0000 AP50=0.0000
+  8 best classes by AP@0.25:
+     scale                        AP25=1.0000 AR25=1.0000 AP50=0.0000
+     guitar                       AP25=1.0000 AR25=1.0000 AP50=0.0000
+     toilet                       AP25=0.9411 AR25=0.9474 AP50=0.7001
+     bed                          AP25=0.9352 AR25=0.9429 AP50=0.7993
+     dish rack                    AP25=0.9000 AR25=1.0000 AP50=0.9000
+     laptop                       AP25=0.8236 AR25=0.8800 AP50=0.4129
+     bathtub                      AP25=0.7701 AR25=0.8387 AP50=0.5014
+     copier                       AP25=0.7623 AR25=0.9333 AP50=0.3627
+  worst LOCALISATION collapse (AP25>0.30, largest relative AP25->AP50 drop):
+     divider                      AP25=0.3469 -> AP50=0.0000  (100.0% drop)
+     scale                        AP25=1.0000 -> AP50=0.0000  (100.0% drop)
+     ball                         AP25=0.5000 -> AP50=0.0000  (100.0% drop)
+     coffee maker                 AP25=0.7424 -> AP50=0.0000  (100.0% drop)
+     guitar                       AP25=1.0000 -> AP50=0.0000  (100.0% drop)
+     toilet paper dispenser       AP25=0.4427 -> AP50=0.0042  (99.1% drop)
+     shower curtain               AP25=0.5694 -> AP50=0.0167  (97.1% drop)
+     plant                        AP25=0.4451 -> AP50=0.0264  (94.1% drop)

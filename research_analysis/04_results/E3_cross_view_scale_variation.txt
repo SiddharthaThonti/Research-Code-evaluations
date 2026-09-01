@@ -1,0 +1,64 @@
+﻿
+========================================================================
+Wildtrack [test]  -  cross-view SCALE variation of the SAME person
+========================================================================
+instances seen in >=2 cameras : 981
+box-height ratio max/min across views:
+   median  2.73x   mean  3.12x
+   p25 =  2.33x
+   p50 =  2.73x
+   p75 =  3.65x
+   p90 =  4.95x
+   p95 =  5.59x
+   p99 =  6.52x
+   max  =  7.72x
+   instances with >= 1.5x cross-view scale ratio:   936  ( 95.4%)
+   instances with >= 2.0x cross-view scale ratio:   886  ( 90.3%)
+   instances with >= 3.0x cross-view scale ratio:   456  ( 46.5%)
+   instances with >= 4.0x cross-view scale ratio:   171  ( 17.4%)
+
+ number of DISTINCT FPN levels the same person falls on, across views:
+   1 level(s):   427  ( 43.5%)
+   2 level(s):   554  ( 56.5%)
+   => 56.5% of pedestrians would be handled by DIFFERENT pyramid levels in different views
+
+ per-camera box-height distribution (px):
+   C1: n=  920  p10= 174  median=  224  p90= 328  max= 640
+   C2: n=  835  p10= 134  median=  181  p90= 237  max= 795
+   C3: n=  929  p10= 172  median=  240  p90= 486  max= 696
+   C4: n=  277  p10= 211  median=  290  p90= 585  max= 672
+   C5: n=  720  p10= 261  median=  344  p90= 450  max=1023
+   C6: n=  964  p10= 129  median=  182  p90= 257  max= 518
+   C7: n=  623  p10= 257  median=  339  p90= 476  max= 613
+
+========================================================================
+MultiviewX [test]  -  cross-view SCALE variation of the SAME person
+========================================================================
+instances seen in >=2 cameras : 1494
+box-height ratio max/min across views:
+   median  2.89x   mean  3.35x
+   p25 =  1.94x
+   p50 =  2.89x
+   p75 =  4.46x
+   p90 =  6.13x
+   p95 =  6.69x
+   p99 =  7.43x
+   max  =  8.34x
+   instances with >= 1.5x cross-view scale ratio:  1358  ( 90.9%)
+   instances with >= 2.0x cross-view scale ratio:  1091  ( 73.0%)
+   instances with >= 3.0x cross-view scale ratio:   719  ( 48.1%)
+   instances with >= 4.0x cross-view scale ratio:   463  ( 31.0%)
+
+ number of DISTINCT FPN levels the same person falls on, across views:
+   1 level(s):  1045  ( 69.9%)
+   2 level(s):   448  ( 30.0%)
+   3 level(s):     1  (  0.1%)
+   => 30.1% of pedestrians would be handled by DIFFERENT pyramid levels in different views
+
+ per-camera box-height distribution (px):
+   C1: n=  914  p10= 128  median=  186  p90= 489  max= 620
+   C2: n= 1365  p10=  97  median=  141  p90= 287  max= 624
+   C3: n= 1213  p10= 104  median=  151  p90= 318  max= 623
+   C4: n= 1305  p10=  82  median=  111  p90= 183  max= 356
+   C5: n= 1283  p10=  88  median=  124  p90= 284  max= 619
+   C6: n= 1348  p10=  86  median=  140  p90= 367  max= 621
